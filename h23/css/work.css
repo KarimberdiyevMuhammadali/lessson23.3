@@ -1,0 +1,68 @@
+.navbar-toggler {
+  border: none;
+  background-color: white;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+nav {
+  background: #1C1E53;
+}
+
+@media (min-width: 767px) {
+  .nav-link {
+    color: #BBBBCB;
+    font-weight: 500;
+    margin-left: 40px;
+    position: relative;
+  }
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+  }
+  .nav-link:hover {
+    color: white;
+  }
+  .navbar__contact__us__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 185px;
+    height: 60px;
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.2);
+    color: #BBBBCB !important;
+    margin-left: 30px !important;
+  }
+  .navbar__contact__us__btn:hover {
+    color: white;
+  }
+  .home__tink {
+    color: white !important;
+  }
+}
